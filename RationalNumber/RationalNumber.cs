@@ -43,7 +43,13 @@ namespace Math
         ICalculable<RationalNumber>, 
         IComparable<RationalNumber>, IComparable<UInt64>, IComparable<Int64>, IComparable<BigInteger>, IComparable
     {
+        /// <summary>
+        /// 分子の値
+        /// </summary>
         private BigInteger _numerator;
+        /// <summary>
+        /// 分母の値
+        /// </summary>
         private BigInteger _denominator;
         private bool _auto_reduction;
 
@@ -105,6 +111,11 @@ namespace Math
         //====================================================================
         //静的メソッド
         //====================================================================
+        /// <summary>
+        /// 2つの有理数を加算する
+        /// </summary>
+        /// <param name="left">加算する有理数オブジェクト1</param>
+        /// <param name="right">加算する有理数オブジェクト2</param>
         public static RationalNumber Add(RationalNumber left, RationalNumber right)
         {
             var result = new RationalNumber(
@@ -155,6 +166,10 @@ namespace Math
             return new RationalNumber(num._denominator, num._numerator, num._auto_reduction);
         }
 
+        /// <summary>
+        /// 指定した有理数の絶対値を取得する
+        /// </summary>
+        /// <param name="num">絶対値を取得したい値</param>
         public static RationalNumber Abs(RationalNumber num)
         {
             return new RationalNumber(BigInteger.Abs(num._numerator), num._denominator);
@@ -283,6 +298,10 @@ namespace Math
         //====================================================================
         //ICulcurableインターフェースの実装
         //====================================================================   
+        /// <summary>
+        /// この有理数と指定した有理数を加算する
+        /// </summary>
+        /// <param name="num">加算する有理数</param>
         public void Add(RationalNumber num)
         {
             throw new NotImplementedException();
@@ -520,6 +539,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数を約分した結果を取得する
+        /// </summary>
         public RationalNumber Reduction
         {
             get
@@ -537,6 +559,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数が1であるかどうかを取得する
+        /// </summary>
         public bool IsOne
         {
             get
@@ -550,6 +575,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数が0であるかどうかを取得する
+        /// </summary>
         public bool IsZero
         {
             get
@@ -558,6 +586,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数が整数であるかどうかを取得する
+        /// </summary>
         public bool IsBigInteger
         {
             get
@@ -571,6 +602,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数が正数，0，負数のどれであるかを取得する
+        /// </summary>
         public int Sign
         {
             get
@@ -582,6 +616,9 @@ namespace Math
         //====================================================================
         //(静的)プロパティ
         //====================================================================
+        /// <summary>
+        /// この有理数が0であるかどうかを取得する
+        /// </summary>
         public static RationalNumber Zero
         {
             get
@@ -590,6 +627,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数が1であるかどうかを取得する
+        /// </summary>
         public static RationalNumber One
         {
             get
@@ -598,6 +638,9 @@ namespace Math
             }
         }
 
+        /// <summary>
+        /// この有理数が-1であるかどうかを取得する
+        /// </summary>
         public static RationalNumber MinusOne
         {
             get
