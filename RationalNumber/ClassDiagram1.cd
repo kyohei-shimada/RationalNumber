@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Math.RationalNumberException">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RationalNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Math.RationalNumber" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="0.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AIIAgIAQAQAAABQE4AejBgAEAQAAEIAAAgBAAACACqA=</HashCode>
+      <FileName>RationalNumber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="Math.ICalculable&lt;T&gt;">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAQAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RationalNumber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="メイリオ" Size="9" />
+</ClassDiagram>
